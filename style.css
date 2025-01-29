@@ -33,9 +33,6 @@ a {
     color: hsl(240, 94%, 65%);
 }
 
-p {
-}
-
 .intro {
     width: 100%;
     height: 100vh;
@@ -93,7 +90,7 @@ p {
 
 .marhaban {
     font-size: 2.5rem;
-    opacity: .5;
+    opacity: .3;
     transform: rotate(-15deg);
     position: absolute;
     top: 21%;
@@ -189,6 +186,7 @@ p {
     justify-content: center;
     align-items: center;
     line-height: 200%;
+    text-align: center;
 }
 
 .social-handles {
@@ -209,4 +207,115 @@ p {
     color: #ffffff;
     text-align: center;
     font-size: .8rem;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+    .intro__cont {
+        height: 100vh;
+        flex-direction: column;
+        padding: 10vh;
+        justify-content: center;
+    }
+
+    .intro__pic__div {
+        width: 300px;
+        height: 50vh;
+        padding-top: 15vh;
+    }
+
+    .pic-circle1, .pic-circle2 {
+        border-radius: 50%;
+        height: 230px;
+        width: 180px;
+        
+    }
+
+    .pic-circle1 {
+        transform: rotate(-30deg) translate(-5px,-30px);
+    }
+    
+    .pic-circle2 {
+        transform: rotate(30deg) translate(0, -29px);
+    }
+
+    .profilepic {
+        width: 170px;
+        height: 170px;
+
+    }
+
+    .introtxt__div {
+        width: 300px;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .marhaban {
+        font-size: 1.5rem;
+        top: 12vh;
+        left: 32vw;
+    }
+
+    .i-am {
+        font-size: 1rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .page2title {
+        font-size: 1.5rem;        
+    }
+
+    .cat {
+        /* flex-direction: column-reverse; */
+        padding: 2vh;
+        font-size: .8rem;
+        border-radius: 8px;
+    }
+
+    .cat__txt__div {
+        width: 60%;
+    }
+    
+    .slides {
+        border-radius: 8px;
+        width: 30vw;
+    }
+
+    .cat__work .cat__pic__div {
+        display: none;
+    }
+
+    .cat__design .cat__txt__div {
+        margin-left: 5vw;
+    }
+
+    .cat__work .cat__txt__div, .cat__additional .cat__txt__div{
+        width: 100%;
+    }
+
+    .cat__txt-title {
+        font-size: 1.5rem;
+    }
+
+    .cat__txt-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .list {
+        line-height: 1.5rem;    
+    }
+
+    .social-handles{
+        width: 75%;
+    }
+    .social-icon {
+        width: 40px;
+    }
 }
